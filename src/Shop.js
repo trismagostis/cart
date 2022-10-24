@@ -10,11 +10,11 @@ function Shop() {
   const removeElement = (indexToRemove) => {
     setListCart(listCart.filter((item, index) => index != indexToRemove));
   };
-  const listItemsOptions = listItems.map((item, index) => (
-    <option key={index} value={item}>
+  const listItemsOptions = listItems.map((item, index) => 
+    (<option key={index} value={item}>
       {item}
-    </option>
-  ));
+    </option>)
+);
 
   return (
     <div id="forms">
